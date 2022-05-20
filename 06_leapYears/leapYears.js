@@ -1,12 +1,9 @@
 const leapYears = function(year) {
-    switch (year) {
-        case year % 100 === 0 && year % 400 === 0:
-            return true;
-        case year % 4 === 0 && year % 100 !== 0:
-            return true;
-        default:
-            return false;
-    } 
+    if (year % 4 === 0 && year % 100 !== 0) {
+        return true;
+    } else if (year % 100 === 0 && year % 400 === 0) {
+        return true;
+    } else return false;
 };
 
 // Do not edit below this line
