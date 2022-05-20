@@ -4,11 +4,13 @@ function round(value, precision) {
 }
 
 const ftoc = function(temp) {
-
+  let tempCel = (temp - 32)*(5/9);
+  return round(tempCel, 1);
 };
 
-const ctof = function() {
-
+const ctof = function(temp) {
+  let tempFar = (temp * 1.8) + 32;
+  return round(tempFar, 1);
 };
 
 // Do not edit below this line
